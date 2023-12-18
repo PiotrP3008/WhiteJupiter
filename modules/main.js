@@ -52,7 +52,7 @@ export function changingColorMenuButtons() {
   else if(isProjects == window.location.href) {
 
     if(scrollY < 50) {
-      window.location.href = 'http://127.0.0.1:5500/index.html';
+      window.location.href = isHome;
     }
 
     document.querySelector(".navigation__projects").style.color = '#D98E73'
