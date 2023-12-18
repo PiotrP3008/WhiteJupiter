@@ -38,9 +38,9 @@ export function scrolling() {
 
 
 export function changingColorMenuButtons() {
-  let isHome = 'http://127.0.0.1:5500/index.html';
-  let isProjects = 'http://127.0.0.1:5500/index.html#anchor-projects';
-  let isAbout = 'http://127.0.0.1:5500/about.html';
+  let isHome = 'https://piotrp3008.github.io/WhiteJupiter/index.html';
+  let isProjects = 'https://piotrp3008.github.io/WhiteJupiter/index.html#anchor-projects';
+  let isAbout = 'https://piotrp3008.github.io/WhiteJupiter/about.html';
   if(isHome == window.location.href) {
     if(scrollY >= 880) {
       window.location.href = isProjects
