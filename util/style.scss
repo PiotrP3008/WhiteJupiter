@@ -1,0 +1,21 @@
+@import "animation";
+@import "global";
+@import "header";
+@import "hero";
+@import "projects";
+@import "about";
+@import "responsive/extralarge-monitor";
+@import "responsive/large-monitor";
+@import "responsive/monitor";
+@import "responsive/tablet";
+@import "responsive/phone";
+@import "responsive/small-phone";
+
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #465E80 0%, #262D66 33%, #0F284D 66%, #0F284D 100%);
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.2rem;
+  
+}

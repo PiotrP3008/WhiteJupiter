@@ -1,0 +1,7 @@
+{
+  "name": "White Jupiter",
+  "icons": [
+    {"src": "favicon\favicon_jup_192x192.png", "type": "image/png", "sizes": "192x192" },
+    {"src":"favicon\favicon_jup_512x512.png", "type": "image/png", "sizes": "512x512"}
+  ]
+}

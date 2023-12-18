@@ -1,0 +1,125 @@
+.projects {
+  position: absolute;
+  min-height: 50%;
+  display: grid;
+  row-gap: 8rem;
+  width: 100%;
+  justify-items: center;
+
+  .go-to-project {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 6;
+    opacity: 0;
+    text-decoration: none;
+    font-weight: 300;
+    color: $black-50;
+
+    white-space: nowrap;
+  }
+
+
+  &-elements {
+    margin-top: 3rem;
+    min-height: 15rem;
+    border-radius: 5px;
+    display: grid;
+    
+
+
+    @include transition-ease;
+    &:hover{
+      
+      &::after {
+        background: $black;
+        z-index: 5;
+        border-radius: 20px;
+        content: "";
+        opacity: 100%;
+        position: absolute;
+        transform: translate(-0.5rem,-1rem);
+      }
+      .go-to-project {
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &-element__WhiteJupiter-text {
+    text-align: center;
+    justify-self: center;
+
+
+
+    h3{
+      margin-top: 10px;
+      font-weight: 300;
+      color: $secondary-color;
+      margin-bottom: 32px;
+      white-space: nowrap;
+    }
+
+    p{
+      font-weight: lighter;
+      letter-spacing: 1px;
+      word-spacing: -2px;
+      line-height: 24px;
+      color: $primary-color;
+      text-align: justify;
+
+    }
+  }
+
+  img { 
+    opacity: 90%;
+    justify-self: start;
+    align-self: center;
+  }
+
+  &-elements__WhiteJupiter-tags {
+    position: relative;
+    justify-self: start;
+    color: $primary-color;
+    font-weight:lighter;
+    letter-spacing: 3px;
+
+    button {
+      border-radius: 10px;
+      min-width: 40px;
+      border: none;
+      margin-right: 24px;
+      .button-tag__div {
+        margin: 3px;
+        margin-left: 8px;
+        margin-right: 8px;
+        color: $black;
+        
+      }
+    }
+
+    .hashtag-front {
+      background: $front-end-button-gradient;
+      
+      
+      &:hover{
+        cursor: pointer;
+        @include transition-ease;
+        background: $front-end-button-gradient-hover;
+      }
+    }
+
+    .hashtag-dates  {
+      background: linear-gradient(129deg, #0E7DE6 50%, #336EA6 100%);
+      
+      
+      &:hover{
+        cursor: pointer;
+        @include transition-ease;
+        background: linear-gradient(129deg, #336EA6 50%, #0E7DE6 100%);
+      }
+    }
+
+  }
+}

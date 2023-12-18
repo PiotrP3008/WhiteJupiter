@@ -1,0 +1,136 @@
+@include media-large-monitor{
+
+  .index {
+    min-height: $website-height-large;
+  }
+
+  body {
+    height: $website-height-large;
+  }
+
+
+  
+  .hero-section__introduction {
+    left: 30rem;
+    width: 35rem;
+    h2 {
+      font-size: font($laptop, header-2);
+      padding: 2.2rem;
+    }
+    h4 {
+      font-size: font($laptop, header-4);
+      line-height: 2.5rem;
+    }
+  }
+  .hero-section__name {
+    padding: 4rem;
+    font-size: font($laptop, header-1);
+  }
+  .hero__jupiter-image {
+    max-width: 27.45rem;
+    img {
+      height: 40rem;
+      width: auto;
+    }
+  }
+  .hero__moon {
+    visibility: visible;
+    animation: moon 40s ease-in-out;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .projects {
+    top: 55rem;
+    grid-template-columns: repeat(1, 1fr);
+
+
+    
+
+    .go-to-project {
+      font-size: font($laptop, header-3);
+    }
+
+    &-elements {
+      width: 55rem;
+      grid-template-columns: [line0] auto [text_zone] 3rem [gap] 5rem [img];
+
+      &:hover {
+        &::after{
+          height: 16rem;
+          width: 58rem;
+        }
+      }
+      
+    }
+
+    &-element__WhiteJupiter-text {
+      grid-column: 1 / 2;
+      h3 {
+        font-size: font($laptop, header-3);
+      }
+      p {
+        letter-spacing: 1px;
+        word-spacing: -2px;
+        line-height: 24px;
+        font-size: font($laptop, paragraph);
+      }
+    }
+
+    img {
+      grid-column: 3 / 4;
+      height: 100px;
+    }
+
+    &-elements__WhiteJupiter-tags {
+      margin-top: 2rem;
+      font-size: font($laptop, paragraph);
+      
+      .button-tag__div {
+        font-size: font($laptop, paragraph);
+      }
+    }
+  }
+
+  footer {
+    top: $website-height-large;
+    font-size: font($laptop, small);
+  }
+
+//About page section
+
+  .about {
+    height: $about-height-large;
+  }
+  .body-about {
+    height: $about-height-large;
+  }
+
+  .hero__about-section {
+    grid-template-columns: 1rem 50rem 10rem 30rem;
+    grid-template-rows: 5rem 8rem 18rem;
+
+    h2 {
+      font-size: font($laptop, header-2);
+    }
+    p {
+      font-size: font($laptop, paragraph);
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      line-height: 1.5rem;
+    }
+    h6 {
+      font-size: font($laptop, header-6);
+      line-height: 1.5rem;
+    }
+    ul {
+      line-height: 3rem;
+      font-size: font($laptop, paragraph);
+    }
+  }
+
+  .footer_about {
+    top: $about-height-large;
+    font-size: font($laptop, small);
+  }
+}

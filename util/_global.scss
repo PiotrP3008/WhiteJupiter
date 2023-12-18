@@ -1,0 +1,106 @@
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@function font($platform, $body-size) {
+  @return map-get($platform, $body-size)
+}
+
+$desctop: (
+  "header-1": 134.65px,
+  "header-2": 101.01px,
+  "header-3": 75.78px,
+  "header-4": 56.85px,
+  "header-5": 42.65px,
+  "header-6": 31.99px,
+  "paragraph": 24px,
+  "small": 18px
+);
+
+$laptop: (
+  "header-1": 112.2px,
+  "header-2": 84.17px,
+  "header-3": 63.15px,
+  "header-4": 47.37px,
+  "header-5": 35.54px,
+  "header-6": 26.66px,
+  "paragraph": 20px,
+  "small": 15px
+);
+
+$smallMonitor: (
+  "header-1": 76.29px,
+  "header-2": 61.04px,
+  "header-3": 48.83px,
+  "header-4": 39.06px,
+  "header-5": 31.25px,
+  "header-6": 25px,
+  "paragraph": 20px,
+  "small": 16px
+);
+
+$phone: (
+  "header-1": 53.75px,
+  "header-2": 44.79px,
+  "header-3": 37.32px,
+  "header-4": 31.1px,
+  "header-5": 25.92px,
+  "header-6": 21.6px,
+  "paragraph": 18px,
+  "small": 15px
+);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+$primary-color: #F2AB6D;
+$secondary-color: #D98E73;
+$header-elements-color: #FCDECD;
+$black: #0E1826;
+$black-50: #465E80;
+$front-end-button-gradient: linear-gradient(129deg, $primary-color 50%, $secondary-color 100%);
+$front-end-button-gradient-hover: linear-gradient(129deg, $secondary-color 20%, $primary-color 100%);
+
+$website-height-extralarge: 2000px;
+$about-height-extralarge: 2000px;
+$website-height-large: 2500px;
+$about-height-large: 1200px;
+$website-height-monitor: 2300px;
+$about-height-monitor: 1500px;
+$website-height-phone: 2300px;
+$about-height-phone: 1800px;
+
+@mixin media-small-phone {
+  @media screen and (max-width: 375px) {
+    @content;
+  } 
+}
+@mixin media-phone {
+  @media screen and (min-width: 375px) and (max-width: 651px) {
+    @content;
+  } 
+}
+@mixin media-tablet {
+  @media screen and (min-width: 651px) and (max-width: 1025px) {
+    @content;
+  } 
+}
+@mixin media-monitor {
+  @media screen and (min-width: 1025px) and (max-width: 1441px) {
+    @content;
+  } 
+}
+@mixin media-large-monitor {
+  @media screen and (min-width: 1441px) and (max-width: 1921px){
+    @content;
+  } 
+}
+@mixin media-extralarge-monitor {
+  @media screen and (min-width: 1921px) {
+    @content;
+  } 
+}

@@ -1,0 +1,144 @@
+@include media-extralarge-monitor{
+
+  .index {
+    min-height: $website-height-extralarge;
+  }
+
+  body {
+    min-height: $website-height-extralarge;
+  }
+
+
+  
+  .hero-section__introduction {
+    left: 35rem;
+    width: 40rem;
+    h2 {
+      font-size: font($desctop, header-2);
+      padding: 2.2rem;
+      
+    }
+    h4 {
+      font-size: font($desctop, header-4);
+      line-height: 4rem;
+    }
+  }
+  .hero-section__name {
+    padding: 3rem;
+    font-size: font($desctop, header-1);
+  }
+  .hero__jupiter-image {
+    max-width: 27.45rem;
+
+    top:1rem;
+    img {
+      height: 40rem;
+      width: auto;
+    }
+  }
+  .hero__moon {
+    visibility: visible;
+    animation: moon 40s ease-in-out;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .projects {
+    top: 55rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+
+    
+
+    .go-to-project {
+      font-size: font($desctop, header-3);
+    }
+
+    &-elements {
+      width: 51rem;
+      grid-template-columns: [line0] auto [text_zone] 3rem [gap] 5rem [img];
+
+      &:hover {
+        &::after{
+          height: 18rem;
+          width: 53rem;
+        }
+      }
+      
+    }
+
+    &-element__WhiteJupiter-text {
+      grid-column: 1 / 2;
+      h3 {
+        font-size: font($desctop, header-3);
+      }
+      p {
+        letter-spacing: 3px;
+        word-spacing: 2px;
+        line-height: 32px;
+        font-size: font($desctop, paragraph);
+      }
+    }
+
+    img {
+      grid-column: 3 / 4;
+      height: 100px;
+    }
+
+    &-elements__WhiteJupiter-tags {
+      margin-top: 4rem;
+      font-size: font($desctop, paragraph);
+      
+      .button-tag__div {
+        font-size: font($desctop, paragraph);
+      }
+    }
+  }
+
+  footer {
+    top: $website-height-extralarge;
+    font-size: font($desctop, small);
+  }
+
+//About page section
+
+  .about {
+    height: $about-height-extralarge;
+  }
+  .body-about {
+    height: $about-height-extralarge;
+
+  }
+
+  .hero__about{
+    display: grid;
+    justify-items: center;
+    &-section {
+      grid-template-columns: 3rem 60rem 20rem 30rem;
+      grid-template-rows: 6rem 8rem 22rem;
+
+      h2 {
+        font-size: font($desctop, header-2);
+      }
+      p {
+        font-size: font($desctop, paragraph);
+        letter-spacing: 1px;
+        word-spacing: 0px;
+        line-height: 2rem;
+      }
+      h6 {
+        font-size: font($desctop, header-6);
+        line-height: 1.5rem;
+      }
+      ul {
+        line-height: 3rem;
+        font-size: font($desctop, paragraph);
+      }
+    }
+  }
+  .footer_about {
+    top: $about-height-extralarge;
+    font-size: font($desctop, small);
+  }
+  
+}

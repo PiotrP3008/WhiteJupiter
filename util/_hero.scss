@@ -1,0 +1,88 @@
+body {
+  height: 230%;
+}
+
+
+.hero {
+  top: 10vh;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+
+
+  &-section {
+    position: absolute;
+    margin-top: 8rem;
+    left: 1vw;
+    width: 80rem;
+    height: 22rem;
+    
+
+    
+
+    &__introduction {
+      position: relative;
+
+      transform: translateX(-50%);
+      height: auto;
+      
+      h2 {
+        font-weight: 400;
+        text-align: center;
+        color: $primary-color;
+        opacity: 80%;
+      }
+      h4 {
+        font-weight: 300;
+        text-align: center;
+        color: $primary-color;
+        opacity: 80%;
+      }
+    }
+    &__name {
+      position: relative;
+      text-align: left;
+      color: $header-elements-color;
+      opacity: 60%;
+    }
+  }
+
+  &__jupiter-image {
+    position: absolute;
+    right: 0rem;
+    overflow: hidden;
+    img{
+      z-index: 1;
+      transform: rotateZ(15deg);
+      opacity: 55%;
+      
+    }
+  }
+
+  &__moon {
+    position: absolute;
+    top: 150px;
+    right: 310px;
+    img {
+      z-index: 1;
+      height: 1.5rem;
+      width: auto;
+      transform: rotateZ(15deg);
+      opacity: 100%; 
+      
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  margin: 0%;
+  padding: 1rem;
+  transform: translateY(-100%);
+  text-align: center;
+  border-top: 1px solid black;
+  color: $primary-color;
+
+
+}

@@ -1,0 +1,153 @@
+@include media-tablet{
+
+  .index {
+    min-height: $website-height-monitor;
+    
+  }
+
+  body {
+    height: $website-height-monitor;
+    overflow-x: hidden;
+  }
+
+  
+  .hero-section__introduction {
+    top: -4rem;
+    left: 20rem;
+    width: 30rem;
+    
+    h2 {
+      font-size: font($smallMonitor, header-2);
+      padding: 2.2rem;
+      opacity: 100%;
+      z-index: 6;
+    }
+    h4 {
+      font-size: font($smallMonitor, header-4);
+      line-height: 2.5rem;
+      opacity: 100%;
+      z-index: 6;
+    }
+  }
+  .hero-section__name {
+    left: 2rem;
+    font-size: font($smallMonitor, header-1);
+    width: 700px;
+
+  }
+  .hero__jupiter-image {
+    max-width: 23rem;
+    img {
+      height: 30rem;
+      width: auto;
+      opacity: 30%;
+    }
+  }
+  .hero__moon {
+    visibility: hidden;
+    img {
+      height: 0.75rem;
+    }
+  }
+
+  .projects {
+    top: 45rem;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+
+    .go-to-project {
+      font-size: font($smallMonitor, header-3);
+    }
+
+    &-elements {
+      
+      width: 40rem;
+      grid-template-columns: [line0] auto [text_zone] 3rem [gap] 5rem [img];
+
+      &:hover {
+        &::after{
+          height: 16rem;
+          width: 42rem;
+        }
+      }
+      
+    }
+
+    &-element__WhiteJupiter-text {
+      grid-column: 1 / 2;
+      h3 {
+        font-size: font($smallMonitor, header-3);
+      }
+      p {
+        letter-spacing: 1px;
+        word-spacing: -2px;
+        line-height: 24px;
+        font-size: font($smallMonitor, paragraph);
+      }
+    }
+
+    img {
+      grid-column: 3 / 4;
+      height: 100px;
+    }
+
+    &-elements__WhiteJupiter-tags {
+      
+      margin-top: 2rem;
+      font-size: font($smallMonitor, paragraph);
+      
+      .button-tag__div {
+        font-size: font($smallMonitor, paragraph);
+      }
+    }
+  }
+
+  footer {
+    top: $website-height-monitor;
+    font-size: font($smallMonitor, small);
+  }
+
+//About page section
+
+  .about {
+    height: $about-height-monitor;
+  }
+  .body-about {
+    height: $about-height-monitor;
+  }
+
+  .hero__about-section {
+    grid-template-columns: 3% 94% 3%;
+    grid-template-rows: 5rem 8rem 20rem 20rem 5rem 10rem;
+
+    h2 {
+      font-size: font($smallMonitor, header-2);
+      opacity: 90%;
+    }
+    p {
+      font-size: font($smallMonitor, paragraph);
+      letter-spacing: 1px;
+      word-spacing: 4px;
+      line-height: 1.5rem;
+      opacity: 90%;
+    }
+    h6 {
+      font-size: font($smallMonitor, header-6);
+      line-height: 1.5rem;
+      grid-row: 5/6;
+      grid-column: 2/3;
+    }
+    ul {
+      line-height: 3rem;
+      font-size: font($smallMonitor, paragraph);
+      grid-row: 6/7;
+      grid-column: 2/3;
+      justify-self: center;
+    }
+  }
+
+  .footer_about {
+    top: $about-height-monitor;
+    font-size: font($smallMonitor, small);
+  }
+}
