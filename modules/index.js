@@ -1,5 +1,5 @@
 import {scrolling, moonAnimation, changingColorMenuButtons} from './main.js';
 
 moonAnimation();
-scrolling();
+setInterval(scrolling, 100);
 setInterval(changingColorMenuButtons, 100);

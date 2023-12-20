@@ -5,7 +5,7 @@
 
   .index {
     min-height: $website-height-phone;
-    
+    overflow-x: hidden;
   }
 
   body {
@@ -128,13 +128,15 @@
     font-size: font($phone, small);
   }
 
-//About page section
+//------About page section
 
   .about {
     height: $about-height-phone;
+    overflow-x: hidden;
   }
   .body-about {
     height: $about-height-phone;
+    overflow-x: hidden;
   }
 
   .hero__about-section {
@@ -142,7 +144,7 @@
     grid-template-rows: 3rem 5rem 28rem 25rem 5rem 10rem;
 
     h2 {
-      font-size: font($phone, header-2);
+      font-size: font($phone, header-3);
       opacity: 90%;
     }
     p {

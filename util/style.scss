@@ -11,6 +11,10 @@
 @import "responsive/phone";
 @import "responsive/small-phone";
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   background-repeat: no-repeat;
   background: linear-gradient(180deg, #465E80 0%, #262D66 33%, #0F284D 66%, #0F284D 100%);
