@@ -50,9 +50,11 @@ export function scrolling() {
 
 
 export function changingColorMenuButtons() {
+
   let isHome = 'https://piotrp3008.github.io/WhiteJupiter/index.html';
   let isProjects = 'https://piotrp3008.github.io/WhiteJupiter/index.html#anchor-projects';
   let isAbout = 'https://piotrp3008.github.io/WhiteJupiter/about.html';
+
   if(isHome == window.location.href) {
     if(scrollY >= 880) {
       window.location.href = isProjects
@@ -75,4 +77,60 @@ export function changingColorMenuButtons() {
     document.querySelector(".navigation__about").style.color = '#D98E73'
   }
 }
+
+export function hamburgerMenuButton() {
+
+  const menuBurger = document.querySelector('.burger__menu');
+  const barOne = document.querySelector('.bar1');
+  const barTwo = document.querySelector('.bar2');
+  const barThree = document.querySelector('.bar3');
+  const navigation = document.querySelector('.navigation');
+  const menuNavigation = document.querySelector('.menu-navigation');
+  const socialIcon = document.querySelector('.social-icons');
+  const navigationItems = document.querySelectorAll('.navigation__item');
+
+
+  let showMenu = false;
+
+  menuBurger.addEventListener('click', toggleMenu);
+  navigationItems.forEach(item => item.addEventListener('click', toggle));
+
+  function toggle() {
+    showMenu = false;
+    menuBurger.classList.remove('open');
+    barOne.classList.remove('open');
+    barTwo.classList.remove('open');
+    barThree.classList.remove('open');
+    navigation.classList.remove('open'); 
+    menuNavigation.classList.remove('open');
+    socialIcon.classList.remove('add');
+  }
+
+  function toggleMenu() {
+    if(!showMenu){
+      menuBurger.classList.add('open');
+      barOne.classList.add('open');
+      barTwo.classList.add('open');
+      barThree.classList.add('open');
+      navigation.classList.add('open');
+      menuNavigation.classList.add('open');
+      socialIcon.classList.add('open');
+
+      showMenu = true;
+    } else {
+      menuBurger.classList.remove('open');
+      barOne.classList.remove('open');
+      barTwo.classList.remove('open');
+      barThree.classList.remove('open');
+      navigation.classList.remove('open'); 
+      menuNavigation.classList.remove('open');
+      socialIcon.classList.remove('open');
+
+      showMenu = false;
+    }
+  }
+
+}
+
+hamburgerMenuButton();
 
