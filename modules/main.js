@@ -103,7 +103,7 @@ export function hamburgerMenuButton() {
     barThree.classList.remove('open');
     navigation.classList.remove('open'); 
     menuNavigation.classList.remove('open');
-    socialIcon.classList.remove('add');
+    socialIcon.classList.remove('open');
   }
 
   function toggleMenu() {
