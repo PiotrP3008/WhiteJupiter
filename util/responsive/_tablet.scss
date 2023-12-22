@@ -37,6 +37,7 @@
   }
   .hero__jupiter-image {
     max-width: 23rem;
+    right: -1rem;
     img {
       height: 30rem;
       width: auto;
@@ -55,22 +56,10 @@
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
 
-    .go-to-project {
-      font-size: font($smallMonitor, header-3);
-    }
 
     &-elements {
-      
       width: 40rem;
       grid-template-columns: [line0] auto [text_zone] 3rem [gap] 5rem [img];
-
-      &:hover {
-        &::after{
-          height: 16rem;
-          width: 42rem;
-        }
-      }
-      
     }
 
     &-element__WhiteJupiter-text {
@@ -91,9 +80,20 @@
       height: 100px;
     }
 
+    .button-go-to {
+      display: block;
+      opacity: 1;
+      height: 80px;
+      width: 280px;
+      transform: translate(50%, 250px);
+      a {
+        font-size: font($phone, header-5);
+      }
+    }
+
     &-elements__WhiteJupiter-tags {
       
-      margin-top: 2rem;
+      margin-top: 8rem;
       font-size: font($smallMonitor, paragraph);
       
       .button-tag__div {

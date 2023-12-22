@@ -52,14 +52,6 @@
     top: 45rem;
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
-    
-
-
-    
-
-    .go-to-project {
-      font-size: font($smallMonitor, header-3);
-    }
 
     &-elements {
       
@@ -67,9 +59,8 @@
       grid-template-columns: [line0] auto [text_zone] 3rem [gap] 5rem [img];
 
       &:hover {
-        &::after{
-          height: 16rem;
-          width: 47rem;
+        .button-go-to {
+          display: block;
         }
       }
       
@@ -91,6 +82,16 @@
     img {
       grid-column: 3 / 4;
       height: 100px;
+    }
+
+    .button-go-to {
+      display: none;
+      height: 240px;
+      width: 800px;
+      transform: translate(-10px, -10px);
+      a {
+        font-size: font($smallMonitor, header-3);
+      }
     }
 
     &-elements__WhiteJupiter-tags {

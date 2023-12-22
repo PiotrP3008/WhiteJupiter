@@ -25,25 +25,8 @@
     min-height: 15rem;
     border-radius: 5px;
     display: grid;
+
     
-
-
-    @include transition-ease;
-    &:hover{
-      
-      &::after {
-        background: $black;
-        z-index: 5;
-        border-radius: 20px;
-        content: "";
-        opacity: 100%;
-        position: absolute;
-        transform: translate(-0.5rem,-1rem);
-      }
-      .go-to-project {
-        opacity: 1;
-      }
-    }
 
   }
 
@@ -76,6 +59,21 @@
     opacity: 90%;
     justify-self: start;
     align-self: center;
+  }
+
+  .button-go-to {
+    position: absolute;
+    border-radius: 20px;
+    border: none;
+    opacity: 98%;
+    background: $black;
+    a {
+      color: $black-50;
+      text-decoration: none;
+      &:hover {
+        color: $black-75;
+      }
+    }
   }
 
   &-elements__WhiteJupiter-tags {

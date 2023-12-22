@@ -73,23 +73,13 @@
     grid-template-columns: repeat(1, 1fr);
     width: 100vw;
 
-    .go-to-project {
-      font-size: font($phone, header-3);
-      transform: translateY(6vh);
-    }
 
     &-elements {
       
       width: 22rem;
       grid-template-columns: [line0] 2rem [text_zone] 18rem [gap];
 
-      &:hover {
-        &::after{
-          height: 14rem;
-          width: 20rem;
-          transform: translate(1rem, 4rem);
-        }
-      }
+      
       
     }
 
@@ -102,17 +92,30 @@
         line-height: 24px;
         font-size: font($phone, small);
       }
+
     }
 
     img {
-      grid-column: 3 / 4;
+      display: none;
       height: 100px;
-      visibility: hidden;
+    }
+
+    .button-go-to {
+      display: block;
+      position: relative;
+      opacity: 1;
+      height: 60px;
+      width: 240px;
+      transform: translate(25%, 40px);
+      a {
+        font-size: font($phone, header-6);
+      }
     }
 
     &-elements__WhiteJupiter-tags {
+      max-width: 300px;
       margin-left: 2rem;
-      margin-top: 3rem;
+      margin-top: 7rem;
       font-size: font($phone, paragraph);
       
       .button-tag__div {

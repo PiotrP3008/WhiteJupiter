@@ -62,6 +62,7 @@ $primary-color: #F2AB6D;
 $secondary-color: #D98E73;
 $header-elements-color: #FCDECD;
 $black: #0E1826;
+$black-75: #22344D;
 $black-50: #465E80;
 $front-end-button-gradient: linear-gradient(129deg, $primary-color 50%, $secondary-color 100%);
 $front-end-button-gradient-hover: linear-gradient(129deg, $secondary-color 20%, $primary-color 100%);
@@ -70,9 +71,9 @@ $website-height-extralarge: 2000px;
 $about-height-extralarge: 2000px;
 $website-height-large: 2500px;
 $about-height-large: 1200px;
-$website-height-monitor: 2300px;
+$website-height-monitor: 2500px;
 $about-height-monitor: 1500px;
-$website-height-phone: 2300px;
+$website-height-phone: 2600px;
 $about-height-phone: 1800px;
 
 @mixin media-small-phone {

@@ -37,7 +37,7 @@ export function scrolling() {
     }
   }
   else {
-    if(scrollY > 100) {
+    if(scrollY > 10) {
       header.style.top ="-100px";
     }
     else{
